@@ -409,13 +409,11 @@ Ryu.prototype.update = function() {
                 }
 
                 console.log("Ryus move right " +  this.movingRight);
-                if (this.movingRight && this.x < 3720) {
+                if (this.movingRight && this.x < 650) {
                     this.x += this.speed;
                 }
 
-                if ((this.x < 640) || (this.x > 3200 && this.x < 3720)) {
-                    this.xView += this.speed;
-                }
+                
             } else if (this.facing === "L") {
                 if (this.jumpKicking) {
                     this.currentAnimation.readyFrames = this.jumpKickFrames;
